@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Conversor de Moedas</h1>
+    <section>
+      <div class="container">
+        <h1>DIGITE UM VALOR</h1>
+        <p>
+          <select name="moedas" id="moedas">
+            <option value="$$" id="dolar">$$</option>
+            <option value="ЄЄ" id="euro">ЄЄ</option>
+            <option value="££" id="libra">££</option>
+          </select>
+          <input type="number" name="num" id="num" />
+          <input
+            id="button"
+            type="button"
+            value="Converter"
+            onclick="convertendoDolar()"
+          />
+        </p>
+        <div><h2 id="res"></h2></div>
+      </div>
+
+      <script src="aula02.js"></script>
+    </section>
+  </body>
+</html>
